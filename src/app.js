@@ -13,6 +13,8 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
+  // 데이터베이스한테 laptop을 요청하고,
+  // 결과(배열)을 받는다.
   res.render("home");
 });
 
